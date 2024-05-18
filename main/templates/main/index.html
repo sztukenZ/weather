@@ -34,8 +34,9 @@
         <form>
   </center>
   <div class="row">
-    {% if country_code and coordinate and temp and pressure and humidity %}
+    {% if country_code and coordinate and temp and pressure and humidity and city %}
     <div class="col-md-6 col-md-offset-3">
+      <h2>{{ city }}</h2>
       <h3>country code : {{country_code}}</h1>
         <h5>coordinate : {{coordinate}}</h5>
         <h5>temp : {{temp}}</h5>
